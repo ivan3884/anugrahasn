@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anugerah ASN 2025 - Entri Data</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -28,18 +28,18 @@
         <div class="bg-white p-6 rounded-xl shadow-lg mb-6">
             <h2 class="text-xl font-bold text-gray-800 mb-4">Formulir Entri Data</h2>
 <form id="form">
-  <input id="nomor" type="number" placeholder="Nomor" required />
-  <input id="nama" type="text" placeholder="Nama" required />
-  <input id="nilai" type="number" placeholder="Nilai" required />
-  <select id="kategori">
+  <input id="nomor" type="number" placeholder="Nomor" required class="w-full p-2 border border-gray-300 rounded mb-3" />
+  <input id="nama" type="text" placeholder="Nama" required class="w-full p-2 border border-gray-300 rounded mb-3" />
+  <input id="nilai" type="number" placeholder="Nilai" required class="w-full p-2 border border-gray-300 rounded mb-3" />
+  <select id="kategori" class="w-full p-2 border border-gray-300 rounded mb-4">
     <option>ASN Terbaik</option>
     <option>Pelaksana Terbaik</option>
   </select>
-  <button type="submit">Simpan</button>
+  <button type="submit" class="bg-kalsel-green text-white px-4 py-2 rounded hover:bg-green-800">
+    Simpan
+  </button>
 </form>
-
         </div>
-
         <div class="bg-white p-6 rounded-xl shadow-lg">
             <h2 class="text-xl font-bold text-gray-800 mb-4">Data Peserta</h2>
             <table class="min-w-full bg-white">
