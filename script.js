@@ -6,6 +6,11 @@ document.getElementById("form").addEventListener("submit", function (e) {
   const nilai = document.getElementById("nilai").value;
   const kategori = document.getElementById("kategori").value;
 
+  if (!nomor || !nama || !nilai || !kategori) {
+    alert("Harap isi semua kolom sebelum mengirim.");
+    return;
+  }
+
   fetch("https://script.google.com/macros/s/AKfycbxrjbNuHxbYfpOH8toCIPKpc3C-1NoeW1BQCjROG4mcHWUpGzKhoQUh5C_dm7ZRopfacA/exec", {
     method: "POST",
     body: JSON.stringify({
