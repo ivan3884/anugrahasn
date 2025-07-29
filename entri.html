@@ -27,34 +27,17 @@
 
         <div class="bg-white p-6 rounded-xl shadow-lg mb-6">
             <h2 class="text-xl font-bold text-gray-800 mb-4">Formulir Entri Data</h2>
-            <form id="form-entri">
-                <input type="hidden" id="edit-id">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                    <div>
-                        <label for="nomor" class="block text-sm font-medium text-gray-700">Nomor</label>
-                        <input type="text" id="nomor" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" required>
-                    </div>
-                    <div>
-                        <label for="nama" class="block text-sm font-medium text-gray-700">Nama</label>
-                        <input type="text" id="nama" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" required>
-                    </div>
-                    <div>
-                        <label for="nilai" class="block text-sm font-medium text-gray-700">Nilai</label>
-                        <input type="number" id="nilai" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" required>
-                    </div>
-                    <div>
-                        <label for="kategori" class="block text-sm font-medium text-gray-700">Kategori</label>
-                        <select id="kategori" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" required>
-                            <option value="ASN">ASN Terbaik</option>
-                            <option value="Pelaksana">Pelaksana Terbaik</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <button type="submit" class="bg-kalsel-green text-white py-2 px-4 rounded-lg hover:bg-opacity-80">Simpan</button>
-                    <button type="button" id="btn-batal" class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-opacity-80 hidden">Batal</button>
-                </div>
-            </form>
+<form id="form">
+  <input id="nomor" type="number" placeholder="Nomor" required />
+  <input id="nama" type="text" placeholder="Nama" required />
+  <input id="nilai" type="number" placeholder="Nilai" required />
+  <select id="kategori">
+    <option>ASN Terbaik</option>
+    <option>Pelaksana Terbaik</option>
+  </select>
+  <button type="submit">Simpan</button>
+</form>
+
         </div>
 
         <div class="bg-white p-6 rounded-xl shadow-lg">
